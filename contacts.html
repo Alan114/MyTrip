@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Alan's webpage</title>
+		<link rel="shortcut icon" href="images/explore.png">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    </head>
+    	<body>
+    		<header class="fixed-bar"><h1 class="page-title">Alan's Trip</h1></header>
+    		<nav>
+    			<ul class="navigation">
+					<li><a href="index.html">Home</a> </li>
+					<li>Contact</li>
+    			</ul>
+			</nav>
+			<main>
+				<div id="contact-me">
+					<img src="images/Alan sensei.jpg" alt="Alan and a wise master">
+					<p>Send me a message if you wish to know more</p>
+				</div>
+				<form class="form">
+					<label for="input-name">Name</label>
+					<input type="text" name="name" class="form-input" id="input-name" oninput="checkInput()">
+					<label for="input-mail">Mail</label>
+					<input type="text" name="email" class="form-input" id="input-mail" oninput="checkInput()">
+					<label for="input-message">Your message</label>
+					<textarea name="message" id="input-message" oninput="checkInput()" cols="30" rows="10" class="form-input"></textarea>
+					<button type="submit" class="submit-button" disabled>Submit</button>
+				</form>
+			</main>
+			<script src="contacts.js"></script>
+        </body>
+</html>
